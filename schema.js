@@ -20,6 +20,7 @@ type Product {
     price:Float
     onSale:Boolean
     category:Category
+    reviews:[Review]!
 }
 type Category{
     id:ID!
@@ -27,4 +28,10 @@ type Category{
     products:[Product!]!
 }
 
+
+type Review{
+    id:ID!
+    title:String
+    product:Product
+}
 `

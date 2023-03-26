@@ -38,3 +38,19 @@ exports.categories =[{
     
 }
 ]
+
+
+exports.reviews =[{
+    id:'nike',
+    title:'nike',
+    
+},{
+    id:'addidas',
+    title:'addidas',
+    
+},{
+    id:'puma',
+    title:'puma',
+    
+}
+]

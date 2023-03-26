@@ -1,4 +1,4 @@
-const { categories, data } = require("../db")
+const { categories } = require("../db")
 
 exports.Query={
     hello:()=>{
@@ -10,10 +10,10 @@ exports.Query={
     yellow:()=>{
         return ['11','null','shsh']
     },
-    products:()=>{
+    products:(parent,args,{data})=>{
         return data
     },
-    product:(parent,args,context)=>{
+    product:(parent,args,{data})=>{
 
 
         return data.find(item=>item.id ===args.id)
